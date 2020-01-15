@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.slogan {
+    color: blueviolet;
+    font-size: 2em;
+    margin: 1em 2em;
+    text-align: center;
+}
+
+main section#ponuda img {
+    width: 350px;
+    height: 350px;
+}
+
+/* Meni */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1em;
+    padding: 1em 0;
+    color: blueviolet;
+}
+
+nav h2 {
+    text-decoration: none;
+    cursor: pointer!important;
+}
+
+nav ul {
+    float: right;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+nav ul li {
+    background-color: blueviolet;
+    color: white;
+    padding: 0.5em;
+    margin: 0 0.5em;
+    border: none;
+    border-radius: 0.6em;
+}
+
+/* Index */
+main section#naslov {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/IMG-20200114-WA0016.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: blueviolet;
+    height: calc(100vw/16*9);
+}
+
+main section#naslov div {
+    border-radius: 1em;
+    font-weight: bolder;
+    padding: 1em;
+    background-color: #ffffff9d;
+}
+
+main section#naslov div h1 {
+    font-size: 5em;
+}
+
+main section#naslov div h3 {
+    font-size: 2em;
+}
+
+main section#ponuda {
+    padding: 3em 10%;
+}
+
+main section#ponuda article {
+    display: flex;
+    align-items: center;
+    padding: 2em 0;
+}
+
+main section#ponuda article p {
+    padding-left: 4em;
+}
+
+main section#ponuda article img {
+    max-width: 70vw;
+}
+
+main section#ponuda article:nth-child(2) p {
+    padding-left: 0;
+    padding-right: 4em;
+}
+
+/* Rase */
+.oprema {
+    display: flex;
+}
+
+.oprema article {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 30%;
+    margin: auto;
+}
+
+.oprema article p {
+    margin-top: 1em;
+    text-align: justify;
+    padding: 0 !important;
+}
+
+/* Q&A */
+main#forma {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+    text-align: center;
+    margin: 2em 8em;
+    max-width: 50em;
+}
+
+form h2 {
+    margin-bottom: 2em;
+    color: blueviolet;
+}
+
+form input {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+form textarea {
+    width: 100%;
+}
+
+form div.red {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+}
+
+form div.red div.polje {
+    width: 47%;
+}
+
+form div.pitanje {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    width: 100%;
+}
+
+form div.pitanje div.polje {
+    width: 100%;
+}
+
+form input, form textarea, form select, form button {
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: blueviolet;
+    border-radius: 1em;
+    margin: 0.5em 0;
+    padding: 0.8em 0;
+    width: 100%;
+}
+
+form button#posalji {
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+footer section {
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+footer section h4 {
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+footer section p {
+    padding: 0.1em 0;
+}
+
+footer section div#social {
+    padding: 0.5em 0;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.3em;
+}
+
+footer a {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .oprema {
+        display: block;
+    }
+    
+    /* Meni */
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav h2 {
+        margin: 0.6em auto;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        width: 100vw;
+        border-radius: 0;
+        margin: auto 0!important;
+        padding-right: 0!important;
+        padding-left: 0!important;
+        background-color: blueviolet;
+    }
+
+    /* Index */
+    main section#naslov {
+        display: flex;
+    }
+
+    main section#ponuda article {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    main section.index article:nth-child(2), .hrana article{
+        flex-wrap: wrap-reverse !important;
+    }
+
+    main section#ponuda article p {
+        padding-top: 1em;
+        padding-left: 0;
+        padding-right: 0!important;
+        text-align: justify;
+    }
+
+    /* Q&A */
+    form div.red {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    form div.red div.polje {
+        width: 100%;
+    }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Fonts -->
+    <script src="https://kit.fontawesome.com/b5949f2d8f.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/validation.js"></script>
+
+    <title>CUKO</title>
+</head>
+
+<body>
+    <nav>
+        <h2><i class="fas fa-paw"></i> CUKO <i class="fas fa-paw"></i></h2>
+        <ul>
+            <a href="index.html">
+                <li>Početna</li>
+            </a>
+            <a href="rase.html">
+                <li>Rase</li>
+            </a>
+            <a href="hrana.html">
+                <li>Hrana</li>
+            </a>
+            <a href="oprema.html">
+                <li>Oprema</li>
+            </a>
+            <a href="qa.html">
+                <li>Q&A</li>
+            </a>
+        </ul>
+    </nav>
+    <h2 class="slogan">Najbolje od nas za vaše pseće visočanstvo!</h2>
+    <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+  	    	    <img src="images/IMG-20200114-WA0012.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/IMG-20200114-WA0013.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/IMG-20200114-WA0014.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/IMG-20200114-WA0015.jpg" />
+  	    		</li>
+          </ul>
+        </div>
+      </section>
+    <main id="forma">
+        <form action="" id="qaForma">
+            <h2>Pitajte nas sve što vas zanima!</h2>
+            <div class="red">
+                <div class="polje">
+                    <label for="">Ime</label><br>
+                    <input type="text" class="ime" required>
+                </div>
+                <div class="polje">
+                    <label for="">Prezime</label><br>
+                    <input type="text" class="prezime" required>
+                </div>
+            </div>
+            <div class="red">
+                <div class="polje">
+                    <label for="">Broj telefona</label><br>
+                    <input type="tel" required>
+                </div>
+                <div class="polje">
+                    <label for="">Email</label><br>
+                    <input type="email" required>
+                </div>
+            </div>
+            <div class="pitanje">
+                <div class="polje">
+                    <select name="" required>
+                        <option value="" disabled selected>Izaberite kategoriju na koju se pitanje odnosi</option>
+                        <option value="">Hrana</option>
+                        <option value="">Rasa</option>
+                        <option value="">Oprema</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pitanje">
+                <div class="polje">
+                    <label for="">Pitanje</label><br>
+                    <textarea name="" rows="5" class="tekst" required></textarea>
+                </div>
+            </div>
+            <button id="posalji">Pošalji</button>
+            <div class="red">
+                <p id="datumVreme"></p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <section>
+            <h4>KONTAKT</h4>
+            <p><i class="fas fa-phone-alt"></i> Telefon: 011-4583-835</p>
+            <p><i class="far fa-envelope"></i> Email: cuko@gmail.com</p>
+            <p><i class="fas fa-mobile-alt"></i> Mobilni: 060/16-15-993</p>
+            <div id="social">
+                <a href="www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="www.instagram.com/cuko_rs"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+        });
+    </script>
+</body>
+
+</html>
